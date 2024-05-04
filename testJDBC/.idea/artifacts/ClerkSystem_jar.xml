@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="ClerkSystem:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ClerkSystem_jar</output-path>
+    <root id="root">
+      <element id="archive" name="ClerkSystem.jar">
+        <element id="module-output" name="ClerkSystem" />
+      </element>
+      <element id="library" level="project" name="mysql-connector-java-8.0.11 (3)" />
+    </root>
+  </artifact>
+</component>
