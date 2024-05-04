@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!--    注册Hello类
+    让Sprint帮助管理HelloWorld相关Bean类
+    id:唯一标识
+    class注册的类型的全路径名称
+    设值注入 必须要有对应构造器-->
+    <bean id="helloWorld" class="Bean.HelloWorld"></bean>
+<!--    <bean id="student1" class="Bean.Student">
+        <property name="id">
+            <null></null>
+        </property>
+        <property name="name" value="yhq"></property>
+        <property name="age" value="18"></property>
+    </bean>-->
+
+
+<!--    构造注入-->
+    <bean id="student1" class="Bean.Student">
+        <constructor-arg name="id" value="0"></constructor-arg>
+        <constructor-arg name="name" value="pwf"></constructor-arg>
+        <constructor-arg name="age">
+            <null></null>
+        </constructor-arg>
+<!--        <constructor-arg name="clazz" ref="clazz"></constructor-arg>-->
+        <constructor-arg name="clazz">
+            <bean class="Bean.Clazz">
+                <constructor-arg name="cno" value="2"></constructor-arg>
+                <constructor-arg name="name" value="软件3班"></constructor-arg>
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean id="number" class="Bean.number">
+        <property name="expression" >
+            <value>
+                <!-- <![CDATA[]]]>代表纯文本内容-->
+                <!-- <![CDATA[a<b]]]>-->
+                <!-- 使用转义字符-->
+                a &lt; b;
+            </value>
+        </property>
+    </bean>
+    <bean class="Bean.Clazz" id="clazz">
+        <constructor-arg name="cno" value="1"/>
+        <constructor-arg name="name" value="软件2班"/>
+    </bean>
+
+
+
+    <bean class="Bean.ArrayListMap" id="arrayListMap">
+            <property name="arr">
+                <array>
+                    <value>你好</value>
+                    <value>不好</value>
+                </array>
+            </property>
+        <property name="map">
+            <map>
+                <entry key="1" value="YES"/>
+            </map>
+        </property>
+        <property name="list">
+            <list>
+                <value>OK</value>
+                <value>No</value>
+            </list>
+        </property>
+    </bean>
+
+</beans>

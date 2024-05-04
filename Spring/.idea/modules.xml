@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringAOP/AOPDemo1/AOPDemo1.iml" filepath="$PROJECT_DIR$/SpringAOP/AOPDemo1/AOPDemo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringAOP/AOPDemo2/AOPDemo2.iml" filepath="$PROJECT_DIR$/SpringAOP/AOPDemo2/AOPDemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringIOC/IOCDemo1/IOCDemo1.iml" filepath="$PROJECT_DIR$/SpringIOC/IOCDemo1/IOCDemo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringIOC/IOCDemo2/IOCDemo2.iml" filepath="$PROJECT_DIR$/SpringIOC/IOCDemo2/IOCDemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringIOC/IOCDemo3/IOCDemo3.iml" filepath="$PROJECT_DIR$/SpringIOC/IOCDemo3/IOCDemo3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringJDBC/JDBCDemo1/JDBCDemo1.iml" filepath="$PROJECT_DIR$/SpringJDBC/JDBCDemo1/JDBCDemo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringJDBC/JDBCDemo2/JDBCDemo2.iml" filepath="$PROJECT_DIR$/SpringJDBC/JDBCDemo2/JDBCDemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Spring.iml" filepath="$PROJECT_DIR$/.idea/Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringAOP/SpringAOP.iml" filepath="$PROJECT_DIR$/SpringAOP/SpringAOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringIOC/SpringIOC.iml" filepath="$PROJECT_DIR$/SpringIOC/SpringIOC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringJDBC/SpringJDBC.iml" filepath="$PROJECT_DIR$/SpringJDBC/SpringJDBC.iml" />
+    </modules>
+  </component>
+</project>

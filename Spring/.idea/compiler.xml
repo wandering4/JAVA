@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="IOCDemo2" />
+        <module name="IOCDemo1" />
+        <module name="JDBCDemo2" />
+        <module name="JDBCDemo1" />
+        <module name="AOPDemo2" />
+        <module name="AOPDemo1" />
+        <module name="IOCDemo3" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AOPDemo1" target="1.8" />
+      <module name="AOPDemo2" target="1.8" />
+      <module name="IOCDemo1" target="1.8" />
+      <module name="IOCDemo2" target="1.8" />
+      <module name="IOCDemo3" target="1.8" />
+      <module name="JDBCDemo1" target="1.8" />
+      <module name="JDBCDemo2" target="1.8" />
+      <module name="SpringAOP" target="1.8" />
+      <module name="SpringIOC" target="1.8" />
+      <module name="SpringJDBC" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

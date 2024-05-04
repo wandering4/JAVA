@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd"
+>
+
+    <!-- 级联依赖-->
+<!--
+    <bean class="service.impl.UserServiceImpl" id="userService">
+        <constructor-arg name="userDao" ref="userDao"></constructor-arg>
+    </bean>
+    <bean class="dao.impl.UserDaoImpl" id="userDao"></bean>
+    <bean class="controller.UserController" id="userController">
+        <property name="service" ref="userService"></property>
+    </bean>
+-->
+
+
+<!--
+        1.引入context的schema
+        2.开启扫描
+        3.通过相关注解实现注入
+        -->
+<!--    放开扫描-->
+    <context:component-scan base-package="com"></context:component-scan>
+</beans>

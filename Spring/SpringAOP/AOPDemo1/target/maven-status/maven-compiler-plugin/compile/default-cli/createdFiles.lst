@@ -1,0 +1,6 @@
+com\service\SomeServiceNoInterface.class
+com\service\SomeService.class
+com\config\SpringConfiguration.class
+com\service\impl\SomeServiceImpl.class
+com\service\SomeProxy.class
+com\service\CglibProxy.class

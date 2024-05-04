@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--    添加扫描路径-->
+    <context:component-scan base-package="com"/>
+    <!--    基于AspectJ注解的形式，需要添加该配置-->
+    <aop:aspectj-autoproxy/>
+
+    <!--基于xml的AOP实现-->
+    <aop:config>
+        <!--配置切面-->
+        <aop:aspect ref="logAspect">
+            <!--定义切点表达式-->
+            <aop:pointcut id="pointCut" expression="execution(* com.service.impl.*.*(..))"/>
+            <!--配置相关通知-->
+            <aop:before method="before" pointcut-ref="pointCut"/>
+            <aop:after-returning method="afterReturning" pointcut-ref="pointCut" returning="res"/>
+            <aop:around method="aroundMethod" pointcut-ref="pointCut"/>
+            <aop:after-throwing method="afterThrowingMethod" pointcut-ref="pointCut" throwing="ex"/>
+            <aop:after method="afterMethod" pointcut-ref="pointCut"/>
+        </aop:aspect>
+    </aop:config>
+
+</beans>
